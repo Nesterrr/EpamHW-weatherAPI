@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+}
+@font-face {
+    font-weight: bold;
+
+    font-family: 'Montserrat', sans-serif;
+    src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+.weather-widget {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    flex-shrink: 0;
+    overflow: hidden;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.place-weather-block,
+.week-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    min-height: 160px;
+    text-align:  center;
+}
+.place-weather-block-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    min-height: 160px;
+    text-align:  center;
+}
+.place-weather-block img {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.place-weather-block span {
+    margin-top: 28px;
+}
+.place-weather-block--cels-margin {
+    margin-left: 5px;
+}
+
+.place-weather-block--m-top span {
+    margin-top: 5px;
+}
+
+.place-weather-block--color-blue {
+    background-color: #06b3db;
+}
+.place-weather-block--color-green {
+    background-color: #4ed486;
+}
+.place-weather-block--color-dblue {
+    background-color: #6139f6;
+}
+.place-weather-block--color-orange {
+    background-color: #e3b63d;
+}
+.week-weather--color-maroon {
+    background-color: #dc3d66;
+}
+.place-weather-block--color-purple {
+    background-color: #bd54cd;
+}
+
+.week-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dc3d66;
+
+    font-size: 0.8rem;
+}
+
+.week__day-weather img {
+    display: block;
+    width: 23px;
+    height: 23px;
+}
+.week {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    width: 100%;
+
+    height: 102px;
+
+    padding-top: 20px;
+    background-color: #b33254;
+}
+.week-weather--img-wrap {
+    display: flex;
+
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    height: 102px;
+}
+.weather-widget--wrapper-cntr {
+    margin: 0 auto;
+}
+@media (max-width: 360px) {
+    .weather-widget {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .place-weather-block,
+    .week-weather,
+    .place-weather-block{
+        width: 50%;
+        height: 160px;
+    }
+    .week-weather {
+        font-size: 0.6rem;
+    }
+    .place-weather-block img {
+        width: 50%;
+    }
+}
+@media (min-width: 361px) and (max-width: 407px) {
+    .weather-widget {
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .place-weather-block,
+    .week-weather,
+    .place-weather-block{
+        width: 33%;
+    }
+    .week-weather {
+        font-size: 0.6rem;
+    }
+    .place-weather-block img {
+        width: 50%;
+    }
+}
+@media (min-width: 408px) and (max-width: 767px){
+    .weather-widget {
+        justify-content: center;
+    }
+    .place-weather-block,
+    .week-weather,
+    .place-weather-block{
+        width: 204px;
+        height: 204px;
+    }
+}
+@media (min-width: 768px) {
+    .weather-widget {
+        max-width: 612px;
+    }
+    .place-weather-block,
+    .week-weather,
+    .place-weather-block-input{
+        width: 204px;
+        height: 204px;
+    }
+
+}

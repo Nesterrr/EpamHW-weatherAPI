@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Widget</title>
+</head>
+<body>
+    <article class="weather-widget weather-widget--wrapper-cntr">
+        <article class="place-weather-block place-weather-block--color-blue">
+            <img src="./img/CRalt.svg" alt="">
+           <div> <!--span>Chicago   /</span><span class="place-weather-block--cels-margin">{{temp}}°</span--></div>
+        </article>
+        <article class="place-weather-block-input  place-weather-block--color-green">
+            <!--img src="./img/Fog.svg" alt=""-->
+            <!--div> <span>none   /</span><span class="place-weather-block--cels-margin">none°</span></div-->
+            <label for="">City</label><input type="text" class="input"></label>
+            <button type="button" class="btn">weather</button>
+        </article>
+        <article class="place-weather-block  place-weather-block--color-dblue">
+            <img src="./img/CS.svg" alt="">
+            <div><!--span>Brooklyn   /</span><span class="place-weather-block--cels-margin">{{temp}}°</span--></div>
+        </article>
+
+        <article class="place-weather-block  place-weather-block--color-orange place-weather-block--m-top">
+            <img src="./img/CSS.svg" alt="">
+            <div><!--span>Portland   /</span><span class="place-weather-block--cels-margin">{{temp}}°</span--></div>
+        </article>
+        <article class="week-weather week-weather--color-maroon">
+            <div class="week-weather--img-wrap">
+                <img src="./img/CWM.svg" alt="">
+            </div>
+            <section class="week">
+                <section class="week__day-weather">
+                    <span class="week__day"</span>
+                    <img src="./img/CRalt.svg" alt="">
+                    <!--span class="week__temp"></span-->
+                </section>
+                <section class="week__day-weather">
+                    <span class="week__day"></span>
+                    <img src="./img/CRalt.svg" alt="">
+                    <!--span class="week__temp"></span-->
+                </section>
+                <section class="week__day-weather">
+                    <span class="week__day"></span>
+                    <img src="./img/Cloud.svg" alt="">
+                    <!--span class="week__temp"></span-->
+                </section>
+                <section class="week__day-weather">
+                    <span class="week__day"></span>
+                    <img src="./img/CS.svg" alt="">
+                    <!--span class="week__temp"></span-->
+                </section>
+            </section>
+        </article>
+        <article class="place-weather-block place-weather-block--color-purple">
+            <img src="./img/Cloud.svg" alt="">
+            <div><!--span>San Jose   /</span><span class="place-weather-block--cels-margin">{{temp}}°</span--></div>
+        </article>
+    </article>
+    <script src="./js/main.js"></script>
+</body>
+</html>
